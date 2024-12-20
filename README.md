@@ -74,13 +74,9 @@ my_microservices/
 Соберите и запустите проект:
     sudo docker-compose up --build
 
-Примеры запросов
+Пример запроса
 
-curl -X POST http://localhost:5001/score -H "Content-Type: application/json" -d '{"login": "user1"}'
-
-curl -X POST http://localhost:5002/auth -H "Content-Type: application/json" -d '{"login": "user1", "password": "password1"}'
-
-curl -X POST http://localhost:8080/composition -H "Content-Type: application/json" -d '{"login": "user1", "password": "password1"}'
+sudo curl -X POST -H "Content-Type: application/json" -d '{"login": "user1", "password": "password1"}' http://127.0.0.1:8080/composition
 
 
 
